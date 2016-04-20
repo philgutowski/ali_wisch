@@ -1,0 +1,160 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700|Pacifico);
+@import url(https://fonts.googleapis.com/css?family=Merriweather:400,300,700,400italic);
+@font-face {
+  font-family: 'icomoon';
+  src: url("../fonts/icomoon.eot?t72fnb");
+  src: url("../fonts/icomoon.eot?t72fnb#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?t72fnb") format("truetype"), url("../fonts/icomoon.woff?t72fnb") format("woff"), url("../fonts/icomoon.svg?t72fnb#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.icon-mail:before {
+  content: "\e900"; }
+
+.icon-twitter:before {
+  content: "\e901"; }
+
+.icon-github:before {
+  content: "\e902"; }
+
+.icon-wordpress:before {
+  content: "\e903"; }
+
+.icon-linkedin2:before {
+  content: "\e904"; }
+
+* {
+  margin: 0; }
+
+html, body {
+  font-family: "Merriweather", serif;
+  color: #334158;
+  margin: 0;
+  min-height: 100vh; }
+  html a, body a {
+    color: white; }
+
+h1 {
+  font-size: 4em; }
+  @media only screen and (max-width: 320px) {
+    h1 {
+      font-size: 2em; } }
+  @media only screen and (max-width: 680px) {
+    h1 {
+      font-size: 2.75em; } }
+
+h2 {
+  font-size: 2em; }
+  @media only screen and (max-width: 320px) {
+    h2 {
+      font-size: 1.5em; } }
+  @media only screen and (max-width: 680px) {
+    h2 {
+      font-size: 1.75em; } }
+
+h3 {
+  font-size: 1.5em; }
+  @media only screen and (max-width: 320px) {
+    h3 {
+      font-size: 1em; } }
+  @media only screen and (max-width: 680px) {
+    h3 {
+      font-size: 1.25em; } }
+
+.social-container {
+  display: flex;
+  justify-content: center;
+  background-color: #F24464;
+  margin: 20px 0;
+  padding: 20px 0; }
+  .social-container a {
+    text-decoration: none; }
+  .social-container .icon {
+    margin: 0 3.75vw;
+    color: white;
+    font-size: 3em; }
+    @media only screen and (max-width: 320px) {
+      .social-container .icon {
+        font-size: 1em;
+        margin: 0 2vw; } }
+    @media only screen and (max-width: 680px) {
+      .social-container .icon {
+        font-size: 2em; } }
+
+.welcome-section {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  flex-direction: column;
+  padding: 0 10%; }
+  @media break-small {
+    .welcome-section {
+      padding: 0 3%; } }
+  .welcome-section .avatar {
+    background-image: url(../../img/avatar.jpg);
+    height: 50vw;
+    width: 50vw;
+    max-width: 200px;
+    max-height: 200px;
+    background-size: cover;
+    background-position: 30% 0;
+    border-radius: 50%;
+    box-shadow: 1px 2px 7px lightgray;
+    margin: 3px auto 10px auto; }
+  .welcome-section .intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; }
+    .welcome-section .intro .name {
+      font-family: "Pacifico", cursive; }
+    .welcome-section .intro .tagline {
+      color: #174057;
+      line-height: 1em; }
+
+.work a {
+  color: #174057; }
+.work h3 {
+  text-align: center;
+  margin: 30px 0 15px 0; }
+.work .list-of-work {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch; }
+.work .piece {
+  padding: 10px;
+  text-align: center;
+  margin: 10px auto;
+  list-style: none;
+  border-radius: 3px;
+  width: 75%;
+  border: 3px solid #F24464;
+  border-radius: 15px; }
+.work .role {
+  font-style: italic; }
+.work .publisher {
+  font-weight: bold;
+  font-size: 1.1em; }
+.work .title {
+  background-color: rgba(255, 255, 255, 0.4);
+  width: 85%;
+  padding: 3px 4px;
+  margin: 5px auto;
+  border-radius: 3px;
+  line-height: 1.7em;
+  color: #174057; }
+.work .description {
+  font-style: italic; }
+
+/*# sourceMappingURL=styles.css.map */
