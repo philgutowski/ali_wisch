@@ -66,11 +66,17 @@ h3 {
 		padding: 0 3%;
 	}
 
+	@media #{$break-large} {
+		height: 88vh;
+	}
+
 	.avatar {
 		// flex-grow: 2;
 		background-image: url(../../img/avatar.jpg);
-		height: 35vh;
-		width: 35vh;
+		height: 40vw;
+		width: 40vw;
+		min-width: 200px;
+		min-height: 200px;
 		max-width: 300px;
 		max-height: 300px;
 		background-size: cover;
@@ -82,7 +88,7 @@ h3 {
 
 	.name {
 		font-family: $fun;
-		font-size: 4em;
+		font-size: 4.5em;
 
 		@media #{$break-med} {
 			font-size: 3.25em;
@@ -109,13 +115,19 @@ h3 {
 
 	.tagline {
 		color: $secondary-text;
-		line-height: 1em;
+		line-height: 2.5em;
 
 		h2 {
-			font-size: 3vw;
+			font-size: 2.5em;
 
 			@media #{$break-small} {
-				font-size: 6vw;
+				font-size: 1.5em;
+				line-height: 1.25em;
+			}
+
+			@media #{$break-med} {
+				font-size: 2em;
+				line-height: 1.5em;
 			}
 		}
 	}
@@ -128,6 +140,10 @@ h3 {
 	background-color: $accent-background;
 	height: 16vh;
 
+	@media #{$break-large} {
+		height: 12vh;
+	}
+
 	a {
 		text-decoration: none;
 	}
@@ -135,7 +151,7 @@ h3 {
 	.icon {
 		margin: 0 4vw;
 		color: $links;
-		font-size: 10vh;
+		font-size: 3em;
 
 		@media #{$break-small} {
 			font-size: 6vh;
