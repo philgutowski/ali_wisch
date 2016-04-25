@@ -47,80 +47,97 @@ html, body {
 
 h1 {
   font-size: 4em; }
-  @media only screen and (max-width: 320px) {
+  @media only screen and (max-width: 420px) {
     h1 {
       font-size: 2em; } }
-  @media only screen and (max-width: 680px) {
+  @media only screen and (max-width: 760px) {
     h1 {
       font-size: 2.75em; } }
 
 h2 {
   font-size: 2em; }
-  @media only screen and (max-width: 320px) {
+  @media only screen and (max-width: 420px) {
     h2 {
       font-size: 1.5em; } }
-  @media only screen and (max-width: 680px) {
+  @media only screen and (max-width: 760px) {
     h2 {
       font-size: 1.75em; } }
 
 h3 {
   font-size: 1.5em; }
-  @media only screen and (max-width: 320px) {
+  @media only screen and (max-width: 420px) {
     h3 {
       font-size: 1em; } }
-  @media only screen and (max-width: 680px) {
+  @media only screen and (max-width: 760px) {
     h3 {
       font-size: 1.25em; } }
 
-.social-container {
-  display: flex;
-  justify-content: center;
-  background-color: #F24464;
-  margin: 20px 0;
-  padding: 20px 0; }
-  .social-container a {
-    text-decoration: none; }
-  .social-container .icon {
-    margin: 0 3.75vw;
-    color: white;
-    font-size: 3em; }
-    @media only screen and (max-width: 320px) {
-      .social-container .icon {
-        font-size: 1em;
-        margin: 0 2vw; } }
-    @media only screen and (max-width: 680px) {
-      .social-container .icon {
-        font-size: 2em; } }
+.above-the-fold {
+  height: 100vh; }
 
 .welcome-section {
   display: flex;
-  flex-wrap: wrap;
   text-align: center;
   flex-direction: column;
-  padding: 0 10%; }
+  justify-content: space-around;
+  padding: 0 10%;
+  height: 84vh; }
   @media break-small {
     .welcome-section {
       padding: 0 3%; } }
   .welcome-section .avatar {
     background-image: url(../../img/avatar.jpg);
-    height: 50vw;
-    width: 50vw;
-    max-width: 200px;
-    max-height: 200px;
+    height: 35vh;
+    width: 35vh;
+    max-width: 300px;
+    max-height: 300px;
     background-size: cover;
     background-position: 30% 0;
     border-radius: 50%;
     box-shadow: 1px 2px 7px lightgray;
-    margin: 3px auto 10px auto; }
-  .welcome-section .intro {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start; }
-    .welcome-section .intro .name {
-      font-family: "Pacifico", sans-serif; }
-    .welcome-section .intro .tagline {
-      color: #174057;
-      line-height: 1em; }
+    margin: 2% auto 4% auto; }
+  .welcome-section .name {
+    font-family: "Pacifico", cursive;
+    font-size: 4em; }
+    @media only screen and (max-width: 760px) {
+      .welcome-section .name {
+        font-size: 3.25em; } }
+    @media only screen and (max-width: 420px) {
+      .welcome-section .name {
+        font-size: 3em; } }
+  .welcome-section .about-me p {
+    margin: 15px auto;
+    font-size: 1.25em; }
+    @media only screen and (max-width: 760px) {
+      .welcome-section .about-me p {
+        font-size: 1em; } }
+    @media only screen and (max-width: 420px) {
+      .welcome-section .about-me p {
+        font-size: 1em; } }
+  .welcome-section .tagline {
+    color: #174057;
+    line-height: 1em; }
+    .welcome-section .tagline h2 {
+      font-size: 3vw; }
+      @media only screen and (max-width: 420px) {
+        .welcome-section .tagline h2 {
+          font-size: 6vw; } }
+
+.social-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #F24464;
+  height: 16vh; }
+  .social-container a {
+    text-decoration: none; }
+  .social-container .icon {
+    margin: 0 4vw;
+    color: white;
+    font-size: 10vh; }
+    @media only screen and (max-width: 420px) {
+      .social-container .icon {
+        font-size: 6vh; } }
 
 .work a {
   color: #174057; }
@@ -139,7 +156,8 @@ h3 {
   list-style: none;
   border-radius: 3px;
   width: 75%;
-  background-color: lightgray; }
+  border: 3px solid #F24464;
+  border-radius: 15px; }
 .work .role {
   font-style: italic; }
 .work .publisher {

@@ -47,68 +47,98 @@ h3 {
 	}
 }
 
-.social-container {
-	display: flex;
-	justify-content: center;
-	background-color: $accent-background;
-	margin: 20px 0;
-	padding: 20px 0;
-
-	a {
-		text-decoration: none;
-	}
-
-	.icon {
-		margin: 0 3.75vw;
-		color: $links;
-
-		font-size: 3em;
-		@media #{$break-small} {
-			font-size: 1em;
-			margin: 0 2vw;
-		}
-		@media #{$break-med} {
-			font-size: 2em;
-		}
-	}
+.above-the-fold {
+	height: 100vh;
+	// display: flex;
+	// flex-direction: column;
+	// justify-content: space-between;
 }
 
 .welcome-section {
 	display: flex;
-	flex-wrap: wrap;
 	text-align: center;
 	flex-direction: column;
+	justify-content: space-around;
 	padding: 0 10%;
+	height: 84vh;
 
 	@media #{break-small} {
 		padding: 0 3%;
 	}
 
 	.avatar {
+		// flex-grow: 2;
 		background-image: url(../../img/avatar.jpg);
-		height: 50vw;
-		width: 50vw;
-		max-width: 200px;
-		max-height: 200px;
+		height: 35vh;
+		width: 35vh;
+		max-width: 300px;
+		max-height: 300px;
 		background-size: cover;
 		background-position: 30% 0;
 		border-radius: 50%;
 		box-shadow: 1px 2px 7px lightgray;
-		margin: 3px auto 10px auto;
+		margin: 2% auto 4% auto;
 	}
 
-	.intro {
-		display: flex;
-		flex-direction: column;
-		justify-content: flex-start;
+	.name {
+		font-family: $fun;
+		font-size: 4em;
 
-		.name {
-			font-family: $fun;
+		@media #{$break-med} {
+			font-size: 3.25em;
 		}
+		@media #{$break-small} {
+			font-size: 3em;
+		}
+	}
 
-		.tagline {
-			color: $secondary-text;
-			line-height: 1em;
+	.about-me {
+		p {
+			margin: 15px auto;
+			font-size: 1.25em;
+
+			@media #{$break-med} {
+				font-size: 1em;
+			}
+
+			@media #{$break-small} {
+				font-size: 1em;
+			}
+		}
+	}
+
+	.tagline {
+		color: $secondary-text;
+		line-height: 1em;
+
+		h2 {
+			font-size: 3vw;
+
+			@media #{$break-small} {
+				font-size: 6vw;
+			}
+		}
+	}
+}
+
+.social-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: $accent-background;
+	height: 16vh;
+
+	a {
+		text-decoration: none;
+	}
+
+	.icon {
+		margin: 0 4vw;
+		color: $links;
+		font-size: 10vh;
+
+		@media #{$break-small} {
+			font-size: 6vh;
 		}
 	}
 }
@@ -138,7 +168,9 @@ h3 {
 		list-style: none;
 		border-radius: 3px;
 		width: 75%;
-		background-color: $grid-item-background;
+		// background-color: $grid-item-background;
+		border: 3px solid $accent-background;
+		border-radius: 15px;
 	}
 
 	.role {
@@ -158,8 +190,6 @@ h3 {
 		border-radius: 3px;
 		line-height: 1.7em;
 		color: $secondary-text;
-
-		
 	}
 
 	.description {
